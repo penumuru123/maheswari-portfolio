@@ -155,12 +155,6 @@ export default function MaheswariPortfolio() {
     { id: 3, text: 'MY Bharat Member: Registered and active in national youth portal.' }
   ];
 
-  const hobbies = [
-    { id: 1, name: 'AI Exploration', text: 'Staying updated with latest LLMs and Generative AI trends.' },
-    { id: 2, name: 'Tech Blogging', text: 'Writing about data science concepts and tutorials.' },
-    { id: 3, name: 'Problem Solving', text: 'Competitive programming on platforms like LeetCode.' }
-  ];
-
   const languages = [
     { id: 1, name: 'English', level: 'Fluent' },
     { id: 2, name: 'Telugu', level: 'Native' },
