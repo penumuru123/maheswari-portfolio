@@ -105,7 +105,7 @@ export default function MaheswariPortfolio() {
     { 
       id: 2, 
       degree: 'Intermediate (12th Grade)', 
-      school: 'Z P Junior College, Andhra Pradesh', 
+      school: 'Vivekananda Jr College', 
       date: '2021 – 2023',
       grade: '974 / 1000 (97.4%)',
       details: 'Major Subjects: MPC. Graduated with an A Grade, ranking among the top students.' 
