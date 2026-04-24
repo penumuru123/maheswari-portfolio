@@ -4,7 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { useReactToPrint } from 'react-to-print';
 import { 
   Code, Mail, Phone, MapPin, Globe, Award, Briefcase, GraduationCap, 
-  User, ChevronRight, Zap, Terminal, Star, CheckCircle, FileText, Linkedin
+  User, ChevronRight, Zap, Terminal, Star, CheckCircle, FileText, Share2
 } from 'lucide-react';
 import Image from 'next/image';
 
@@ -42,7 +42,6 @@ export default function MaheswariPortfolio() {
     title: 'AI & Data Science Specialist',
     email: 'maheswaripenumuru@gmail.com',
     phone: '+91 93907 76117',
-    location: 'Andhra Pradesh, India',
     location: 'Andhra Pradesh, India',
     github: 'https://github.com/penumuru123',
     linkedin: 'https://linkedin.com/in/p-maheswari',
@@ -196,11 +195,11 @@ export default function MaheswariPortfolio() {
             <a href={`mailto:${basicInfo.email}`} className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Mail size={16} className="text-[#00f5d4]"/> {basicInfo.email}</a>
             <a href={`tel:${basicInfo.phone.replace(/\s/g, '')}`} className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Phone size={16} className="text-[#00f5d4]"/> {basicInfo.phone}</a>
             <a href={basicInfo.github} target="_blank" rel="noreferrer" className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Code size={16} className="text-[#00f5d4]"/> GitHub</a>
-            <a href={basicInfo.linkedin} target="_blank" rel="noreferrer" className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Linkedin size={16} className="text-[#00f5d4]"/> LinkedIn</a>
+            <a href={basicInfo.linkedin} target="_blank" rel="noreferrer" className="contact-chip print:hidden justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Share2 size={16} className="text-[#00f5d4]"/> LinkedIn</a>
             <div className="contact-chip justify-center backdrop-blur-md cursor-default"><MapPin size={16} className="text-[#00f5d4]"/> {basicInfo.location}</div>
-            <div className="print-only-portfolio hidden print:flex items-center gap-2 text-black text-sm font-medium">
+            <a href={basicInfo.portfolio} target="_blank" rel="noreferrer" className="hidden print:flex items-center gap-2 text-black text-sm font-medium !no-underline mt-1">
               <Globe size={14} className="text-[#008f7a]"/> {basicInfo.portfolio}
-            </div>
+            </a>
           </div>
 
           {/* Professional Download Button */}
