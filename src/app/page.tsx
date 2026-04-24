@@ -46,6 +46,7 @@ export default function MaheswariPortfolio() {
     location: 'Andhra Pradesh, India',
     github: 'https://github.com/penumuru123',
     linkedin: 'https://linkedin.com/in/p-maheswari',
+    portfolio: 'https://maheswari-portfolio.vercel.app/',
     summary: 'Aspiring AI & Data Science Specialist and 4th-year B.Tech student with a consistent record of excellence (8.72 CGPA). Expert in predictive modeling, cloud engineering, and full-stack development. Passionate about leveraging data-driven insights to solve complex industry challenges.'
   };
 
@@ -197,6 +198,9 @@ export default function MaheswariPortfolio() {
             <a href={basicInfo.github} target="_blank" rel="noreferrer" className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Code size={16} className="text-[#00f5d4]"/> GitHub</a>
             <a href={basicInfo.linkedin} target="_blank" rel="noreferrer" className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Linkedin size={16} className="text-[#00f5d4]"/> LinkedIn</a>
             <div className="contact-chip justify-center backdrop-blur-md cursor-default"><MapPin size={16} className="text-[#00f5d4]"/> {basicInfo.location}</div>
+            <div className="print-only-portfolio hidden print:flex items-center gap-2 text-black text-sm font-medium">
+              <Globe size={14} className="text-[#008f7a]"/> {basicInfo.portfolio}
+            </div>
           </div>
 
           {/* Professional Download Button */}
