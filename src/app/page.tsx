@@ -188,7 +188,7 @@ export default function MaheswariPortfolio() {
 
 
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-5xl mt-4">
+          <div className="flex flex-wrap justify-center gap-4 w-full max-w-4xl mt-4">
             <a href={`mailto:${basicInfo.email}`} className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Mail size={16} className="text-[#00f5d4]"/> {basicInfo.email}</a>
             <a href={`tel:${basicInfo.phone.replace(/\s/g, '')}`} className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Phone size={16} className="text-[#00f5d4]"/> {basicInfo.phone}</a>
             <a href={basicInfo.github} target="_blank" rel="noreferrer" className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Code size={16} className="text-[#00f5d4]"/> GitHub</a>
