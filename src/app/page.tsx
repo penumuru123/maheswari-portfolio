@@ -39,14 +39,14 @@ export default function MaheswariPortfolio() {
   const basicInfo = {
     firstName: 'Penumuru',
     lastName: 'Maheswari',
-    title: 'AI & Data Science Specialist',
+    title: 'AI & Data Science (AI&DS)',
     email: 'maheswaripenumuru@gmail.com',
     phone: '+91 93907 76117',
     location: 'Andhra Pradesh, India',
     github: 'https://github.com/penumuru123',
     linkedin: 'https://linkedin.com/in/p-maheswari',
     portfolio: 'https://maheswari-portfolio.vercel.app/',
-    summary: 'Aspiring AI & Data Science Specialist and 4th-year B.Tech student with a consistent record of excellence (8.72 CGPA). Expert in predictive modeling, cloud engineering, and full-stack development. Passionate about leveraging data-driven insights to solve complex industry challenges.'
+    summary: 'Currently a 4th-year B.Tech student at MTIET with a specialized focus on Full-Stack Web Development (React.js, Node.js, Next.js, Golang). Backed by an Elite NPTEL certification and virtual internships with industry leaders like AWS, Google, and Palo Alto Networks. Adept at engineering scalable solutions and utilizing Docker and CI/CD to deliver highly responsive applications in high-pressure professional environments.'
   };
 
   const experience = [
@@ -134,10 +134,10 @@ export default function MaheswariPortfolio() {
   ];
 
   const skills = [
-    { id: 1, category: 'AI & Data Science', items: 'Scikit-Learn, Pandas, NumPy, TensorFlow, AWS Glue' },
-    { id: 2, category: 'Programming', items: 'Python, Java, SQL, C' },
-    { id: 3, category: 'Web Development', items: 'HTML5, CSS3, JavaScript, React.js' },
-    { id: 4, category: 'Tools & Platforms', items: 'Git, VS Code, Jupyter, AWS, Google Cloud' }
+    { id: 1, category: 'Languages', items: 'Python, Java, Golang, SQL' },
+    { id: 2, category: 'Web', items: 'React.js, Next.js, Node.js, TypeScript' },
+    { id: 3, category: 'DevOps', items: 'Docker, CI/CD, Kubernetes' },
+    { id: 4, category: 'AI/ML', items: 'Scikit-Learn, Pandas, NumPy' }
   ];
 
   const certs = [
@@ -186,23 +186,7 @@ export default function MaheswariPortfolio() {
             <div className="text-2xl lg:text-3xl font-light text-[#00f5d4] tracking-[0.2em] uppercase mt-4">{basicInfo.title}</div>
           </div>
 
-          <div className="relative group">
-            <div className="w-[180px] h-[180px] lg:w-[240px] lg:h-[240px] rounded-full overflow-hidden border-4 border-[#00f5d4] shadow-[0_0_60px_rgba(0,245,212,0.3)] bg-black/40 backdrop-blur-xl relative">
-              {profileImg && (
-                <Image 
-                  src={profileImg} 
-                  alt="Profile" 
-                  fill
-                  className="object-cover" 
-                  style={{ objectPosition: `center ${photoOffsetY}%` }}
-                  unoptimized={profileImg.startsWith('data:')}
-                />
-              )}
-              {!profileImg && (
-                <div className="w-full h-full flex items-center justify-center text-[#00f5d4]"><User size={100}/></div>
-              )}
-            </div>
-          </div>
+
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-4 w-full max-w-5xl mt-4">
             <a href={`mailto:${basicInfo.email}`} className="contact-chip justify-center backdrop-blur-md hover:bg-[#00f5d4]/20 hover:scale-105 transition-all !no-underline !text-white"><Mail size={16} className="text-[#00f5d4]"/> {basicInfo.email}</a>
