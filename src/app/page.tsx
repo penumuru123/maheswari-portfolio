@@ -6,8 +6,6 @@ import {
   Code, Mail, Phone, MapPin, Globe, Award, Briefcase, GraduationCap, 
   User, ChevronRight, Zap, Terminal, Star, CheckCircle, FileText, Share2
 } from 'lucide-react';
-import Image from 'next/image';
-
 export default function MaheswariPortfolio() {
   const printRef = useRef(null);
   const [scrolled, setScrolled] = useState(false);
@@ -21,19 +19,6 @@ export default function MaheswariPortfolio() {
   const handlePrint = useReactToPrint({
     contentRef: printRef,
     documentTitle: 'Penumuru_Maheswari_Matrix_Portfolio',
-  });
-
-  const [profileImg] = useState<string | null>(() => {
-    if (typeof window !== 'undefined') {
-      return localStorage.getItem('maheswari_v2_img') || '/image.png';
-    }
-    return '/image.png';
-  });
-  const [photoOffsetY] = useState<number>(() => {
-    if (typeof window !== 'undefined') {
-      return Number(localStorage.getItem('maheswari_v2_offset')) || 25;
-    }
-    return 25;
   });
 
   const basicInfo = {
@@ -99,7 +84,7 @@ export default function MaheswariPortfolio() {
       degree: 'Bachelor of Technology (B.Tech)', 
       school: 'MTIET / JNTUA', 
       date: '2021 — 2025 (Currently Pursuing)',
-      grade: '8.72 CGPA (82.2%) [Upto 3-1 Semester]',
+      grade: '8.72 CGPA (82.2%) [Upto 3-2 Semester]',
       details: 'Specialized in Machine Learning, Data Structures, and Python Programming. Currently pursuing 4th Year.' 
     },
     { 
@@ -123,6 +108,16 @@ export default function MaheswariPortfolio() {
   const projects = [
     {
       id: 1,
+      title: 'JNTUA R23 Student Academic Dashboard',
+      link: 'https://github.com/penumuru123/jntua-web-dashboard',
+      stack: 'React 19, TypeScript, Vite',
+      bullets: [
+        'Engineered a comprehensive ReactJS academic suite for JNTUA students featuring real-time CGPA/SGPA calculation and dynamic attendance tracking.',
+        'Designed a premium glassmorphic UI using modern CSS and implemented robust state management with local storage persistence.'
+      ]
+    },
+    {
+      id: 2,
       title: 'Full-Stack Task Management System',
       link: 'https://github.com/penumuru123/full-stack-developement',
       stack: 'React.js, Java, HTML/CSS',
