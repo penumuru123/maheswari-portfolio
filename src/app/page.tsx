@@ -24,22 +24,22 @@ export default function MaheswariPortfolio() {
   const basicInfo = {
     firstName: 'Penumuru',
     lastName: 'Maheswari',
-    title: 'AI & Data Science (AI&DS)',
+    title: 'Software Engineer | AI & Data Science Student',
     email: 'maheswaripenumuru@gmail.com',
-    phone: '+91 93907 76117',
-    location: 'Andhra Pradesh, India',
+    phone: '+91 9390776117',
+    location: 'Palamaner, AP, India',
     github: 'https://github.com/penumuru123',
-    linkedin: 'https://linkedin.com/in/p-maheswari',
+    linkedin: 'https://linkedin.com/in/penumuru-maheswari-1bab3840b',
     portfolio: 'https://maheswari-portfolio.vercel.app/',
-    summary: 'Currently a 4th-year B.Tech student at MTIET with a specialized focus on Full-Stack Web Development (React.js, Node.js, Next.js, Golang). Backed by an Elite NPTEL certification and virtual internships with industry leaders like AWS, Google, and Palo Alto Networks. Adept at engineering scalable solutions and utilizing Docker and CI/CD to deliver highly responsive applications in high-pressure professional environments.'
+    summary: 'High-achieving B.Tech student in Artificial Intelligence & Data Science (8.72 CGPA) at MTIET. Proficient in predictive modeling, machine learning (TensorFlow, PyTorch, Scikit-Learn), AWS cloud data engineering (S3, Glue), and modern full-stack web development (React.js, TypeScript). Experienced across virtual internships with industry leaders including AWS Academy (Grade: O), Google for Developers, and Palo Alto Networks.'
   };
 
   const experience = [
     { 
       id: 1, 
-      title: 'Data Engineering Virtual Intern', 
-      company: 'AWS Academy (via EduSkills)', 
-      date: 'Oct - Dec 2025', 
+      title: 'Data Engineering Virtual Intern (Grade: O)', 
+      company: 'AWS Academy & EduSkills', 
+      date: 'Oct – Dec 2025', 
       bullets: [
         'Successfully completed 10-week program with an Outstanding (O) Grade.',
         'Architected scalable data pipelines using AWS Glue and Amazon S3.',
@@ -48,29 +48,29 @@ export default function MaheswariPortfolio() {
     },
     { 
       id: 2, 
-      title: 'Ethical Hacking Virtual Intern', 
-      company: 'EduSkills Academy', 
-      date: 'Apr - Jun 2025', 
-      bullets: [
-        'Gained deep insights into Penetration Testing and Network Security.',
-        'Implemented vulnerability assessment tools to identify and mitigate threats.'
-      ]
-    },
-    { 
-      id: 3, 
-      title: 'AI-ML Virtual Intern', 
+      title: 'AI-ML Virtual Internship', 
       company: 'Google for Developers (India Edu Program)', 
-      date: 'Jul - Sep 2024', 
+      date: 'Jul – Sep 2024', 
       bullets: [
         'Developed predictive models using TensorFlow and Google Cloud AI.',
         'Focused on automating data preprocessing and feature engineering.'
       ]
     },
     { 
+      id: 3, 
+      title: 'Ethical Hacking Virtual Intern', 
+      company: 'EduSkills Academy', 
+      date: 'Apr – Jun 2025', 
+      bullets: [
+        'Gained deep insights into Penetration Testing and Network Security.',
+        'Implemented vulnerability assessment tools to identify and mitigate threats.'
+      ]
+    },
+    { 
       id: 4, 
       title: 'Cybersecurity Virtual Intern', 
       company: 'Palo Alto Networks', 
-      date: 'Apr - Jun 2024', 
+      date: 'Apr – Jun 2024', 
       bullets: [
         'Completed a 10-week virtual program and a 120-hour short-term internship.',
         'Configured Next-Generation Firewalls and learned cloud security practices.'
@@ -81,27 +81,27 @@ export default function MaheswariPortfolio() {
   const education = [
     { 
       id: 1, 
-      degree: 'Bachelor of Technology (B.Tech)', 
-      school: 'MTIET / JNTUA', 
-      date: '2021 — 2025 (Currently Pursuing)',
-      grade: '8.72 CGPA (82.2%) [Upto 3-2 Semester]',
-      details: 'Specialized in Machine Learning, Data Structures, and Python Programming. Currently pursuing 4th Year.' 
+      degree: 'B.Tech -- AI & Data Science', 
+      school: 'Mother Theresa Institute of Engineering and Technology', 
+      date: '2023 – 2027 (Currently Pursuing 4th Year B.Tech)',
+      grade: '8.72 CGPA (82.2%)',
+      details: 'Specialized in Machine Learning, Data Engineering, Python, and Web Frameworks.' 
     },
     { 
       id: 2, 
-      degree: 'Intermediate (12th Grade)', 
-      school: 'Vivekananda Jr College', 
-      date: '2021 – 2023',
+      degree: 'Intermediate -- MPC (Mathematics, Physics, Chemistry)', 
+      school: 'Board of Intermediate Education, AP (Vivekananda Jr College)', 
+      date: '2021 – 2023 (Completed)',
       grade: '974 / 1000 (97.4%)',
-      details: 'Major Subjects: MPC. Graduated with an A Grade, ranking among the top students.' 
+      details: 'Major Subjects: Mathematics, Physics, and Chemistry (MPC).' 
     },
     { 
       id: 3, 
-      degree: 'Secondary School Certificate (SSC)', 
-      school: 'Z P High School, Karasanapalle', 
-      date: 'Passed June 2021',
+      degree: 'Secondary School Certificate (SSC / 10th Grade)', 
+      school: 'Board of Secondary Education, AP (ZP High School, Karasanapalle)', 
+      date: 'June 2021 (Completed)',
       grade: '591 / 600 (98.5%)',
-      details: 'Achieved a First Division with near-perfect scores in Science and Mathematics.' 
+      details: 'Achieved near-perfect scores in Mathematics and Science.' 
     }
   ];
 
@@ -109,45 +109,53 @@ export default function MaheswariPortfolio() {
     {
       id: 1,
       title: 'JNTUA R23 Student Academic Dashboard',
-      link: 'https://github.com/penumuru123/jntua-web-dashboard',
-      stack: 'React 19, TypeScript, Vite',
+      link: 'https://jntua-web-dashboard.vercel.app/',
+      stack: 'React 19, TypeScript, Vite, CSS3',
       bullets: [
-        'Engineered a comprehensive ReactJS academic suite for JNTUA students featuring real-time CGPA/SGPA calculation and dynamic attendance tracking.',
-        'Designed a premium glassmorphic UI using modern CSS and implemented robust state management with local storage persistence.'
+        'Engineered a comprehensive ReactJS academic suite for JNTUA students featuring real-time CGPA/SGPA calculation.',
+        'Designed a premium glassmorphic UI with dynamic state management and local storage data persistence.'
       ]
     },
     {
       id: 2,
       title: 'Full-Stack Task Management System',
       link: 'https://github.com/penumuru123/full-stack-developement',
-      stack: 'React.js, Java, HTML/CSS',
+      stack: 'React.js, Java, SQL, HTML5/CSS3',
       bullets: [
-        'Developed a responsive React/Java app with integrated analytics and security.',
-        'Optimized performance for low-latency updates and cross-platform compatibility.'
+        'Developed a responsive React/Java web application with integrated analytics and security controls.',
+        'Optimized performance for low-latency updates and cross-platform browser compatibility.'
+      ]
+    },
+    {
+      id: 3,
+      title: 'Personal Portfolio Website',
+      link: 'https://github.com/penumuru123/maheswari-portfolio',
+      stack: 'React.js, Next.js, HTML5/CSS3, Vercel',
+      bullets: [
+        'Built and deployed a personal developer portfolio showcasing interactive project showcases and technical skills.',
+        'Designed a responsive, modern UI with smooth transitions, fast asset rendering, and mobile optimization.'
       ]
     }
   ];
 
   const skills = [
-    { id: 1, category: 'Languages', items: 'Python, Java, Golang, SQL' },
-    { id: 2, category: 'Web', items: 'React.js, Next.js, Node.js, TypeScript' },
-    { id: 3, category: 'DevOps', items: 'Docker, CI/CD, Kubernetes' },
-    { id: 4, category: 'AI/ML', items: 'Scikit-Learn, Pandas, NumPy' }
+    { id: 1, category: 'Programming Languages', items: 'Python, Java, SQL, C, JavaScript, Prompt Engineering' },
+    { id: 2, category: 'Web & Frameworks', items: 'React.js, Node.js, HTML5/CSS3' },
+    { id: 3, category: 'Tools & Platforms', items: 'Git, GitHub, VS Code, Antigravity IDE' },
+    { id: 4, category: 'Core Competencies', items: 'Problem Solving, Analytical Thinking, Technical Communication, Adaptability' }
   ];
 
   const certs = [
-    { id: 1, name: 'Elite NPTEL: Industry 4.0 & IIoT (Score: 90%)', date: 'Oct 2025' },
-    { id: 2, name: 'Business English (edX): Upper-Intermediate', date: 'Apr 2024' },
-    { id: 3, name: 'Problem Solving (edX): Advanced Methodologies', date: 'Apr 2024' },
-    { id: 4, name: 'AI Model Training: Infosys Springboard', date: 'Dec 2024' },
-    { id: 5, name: 'IP Awareness (NIPAM): National Mission', date: 'Mar 2024' },
-    { id: 6, name: 'Quantum Computing: IIT NPTEL Qiskit', date: 'Feb 2026' }
+    { id: 1, name: 'NPTEL Industry 4.0 & IIoT (12-Week): Score: 90% (Elite Certification)', date: 'IIT NPTEL' },
+    { id: 2, name: 'Quantum Computing (Qiskit): Certified', date: 'Feb 2026' },
+    { id: 3, name: 'AI Model Training & Neural Networks: Certified', date: 'Infosys Springboard | Dec 2024' },
+    { id: 4, name: 'National IP Awareness Mission: Certified', date: 'NIPAM, Govt. of India | March 2024' },
+    { id: 5, name: 'Problem Solving & Critical Thinking: Grade: Pass', date: 'edX -- FullbridgeX | April 2024' },
+    { id: 6, name: 'Upper-Intermediate English: Grade: Pass', date: 'edX -- UPValenciaX | April 2024' }
   ];
 
   const highlights = [
-    { id: 1, text: 'BIM for Entrepreneurs: Technical webinar by CMTI Bengaluru (Apr 2024).' },
-    { id: 2, text: 'Viksit Bharat Quiz: Recognized by Ministry of Youth Affairs.' },
-    { id: 3, text: 'MY Bharat Member: Registered and active in national youth portal.' }
+    { id: 1, text: 'BIM for Entrepreneurs: Technical webinar by CMTI Bengaluru & Viksit Bharat Quiz.' }
   ];
 
   const languages = [
